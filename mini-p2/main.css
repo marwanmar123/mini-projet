@@ -1,0 +1,93 @@
+.container{
+    max-width: 1000px;
+    margin: 10px auto;
+    background-color: #e6eff6;
+}
+.area{
+    max-width: 600px;
+    padding: 50px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "main main aside aside"
+    "main main aside aside"
+    ;
+    font-family: karla, sans-serif;
+}
+header{
+    grid-area: header;
+    background-color: white;
+    padding: 20px;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+main{
+    grid-area: main;
+    background-color:#2bb3b1;
+    padding: 20px;
+    border-bottom-left-radius: 0.5em;
+}
+aside{
+    grid-area: aside;
+    background-color: #4abebd;   
+    padding: 20px;
+    border-bottom-right-radius: 0.5em;
+}
+.headh1{
+    color: hsl(179, 62%, 43%);
+}
+h3{
+    color:  hsl(71, 73%, 54%);
+}
+p{
+    color: #A4A4A4;
+}
+
+.str1{
+    display: flex;
+}
+.font1{
+    color: white;
+}
+span{
+    font-size: 10px;
+    opacity: 0.6;
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color:hsl(71, 73%, 54%) ;
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 6px;
+    position: relative;
+    top: 20px;
+    
+}
+aside{
+    line-height: 20px;
+    color: white;
+}
+.asidetext{
+    opacity: 0.6;
+
+}
+@media only screen and (max-width: 760px){
+    .area{
+        display: flex;
+        flex-flow: column;
+    }
+    a{
+        position: relative;
+        top: 2px;
+    }
+    main{
+        border-bottom-left-radius: 0em;
+    }
+    aside{
+        border-bottom-left-radius: 0.5em;
+    }
+}
