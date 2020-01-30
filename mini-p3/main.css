@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.inter{
+    margin:20px auto ;
+    max-width: 1000px;
+    background-color: #F2F2F2;
+    padding: 40px;
+}
+.inter-2{
+    margin:20px auto ;
+    max-width: 800px;
+    background-image: url(images/bg-intro-desktop.png);
+}
+.container{
+    margin:0px auto ;
+    max-width: 800px;
+    background-color: hsla(0, 92%, 61%, 0.63) ;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 40px;
+}
+.part1{
+    color: white;
+    margin-left: 10px;
+    position: relative;
+    top: 100px;
+}
+.P1{
+    font-size: 15px;
+    opacity: 0.7;
+}
+.part2{
+    margin-left: 50px;
+}
+.quote{
+    background-color: white;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 5px;
+    width: 300px;
+}
+input{
+    margin-left: 10px;
+    width:270px;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 5px;
+}
+.button-1{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    background: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    width: 260px;
+    padding: 10px;
+    margin-left:12px;
+    text-align: center;
+}
+.p1p1{
+    text-align: center;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.438);
+    border-radius: 5px;
+    padding: 13px;
+    padding-left: 20px;
+    width: 300px;
+}
+.span1{
+    font-size: 11px;
+    opacity: 0.6;
+}
+.ppp{
+   font-size: 8px;
+   text-align: center;
+   opacity: 0.7;
+}
+.span2{
+    color: red;
+}
+@media only screen and (max-width: 760px){
+    .container{
+        display: flex;
+        flex-flow: column;
+    }
+    .part1{
+        margin-bottom: 90px;
+    }
+    .part2{
+        margin-left: 0px;
+    }
+}
